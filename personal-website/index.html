@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development & Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Привет, я <span class="highlight">Даниил</span></h1>
+                <div class="typing-text">
+                    <span id="typed-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">Создаю современные веб-сайты, которые помогают бизнесу расти в цифровом пространстве</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Связаться со мной</a>
+                    <a href="#portfolio" class="btn btn-secondary">Смотреть работы</a>
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <div class="about-header">
+                        <h2>Обо мне</h2>
+                        <div class="experience-badge">
+                            <span class="years">5+</span>
+                            <span class="text">лет опыта</span>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p class="highlight-text">Привет! Я веб-разработчик с страстью к созданию красивых и функциональных веб-сайтов.</p>
+                        <p>Специализируюсь на разработке современных веб-приложений с использованием передовых технологий и лучших практик в области дизайна и разработки.</p>
+                    </div>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>Frontend</h3>
+                            <div class="skill-items">
+                                <div class="skill-item" data-skill="HTML5">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-html5"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">HTML5</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="CSS3">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">CSS3</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="JavaScript">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-js"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">JavaScript</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Backend</h3>
+                            <div class="skill-items">
+                                <div class="skill-item" data-skill="Node.js">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-node-js"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">Node.js</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-item" data-skill="Python">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <span class="skill-name">Python</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="150">0</div>
+                            <div class="stat-label">Проектов завершено</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="98">0</div>
+                            <div class="stat-label">Довольных клиентов</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="5">0</div>
+                            <div class="stat-label">Лет опыта</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="images/profile.jpg" alt="Profile" class="profile-image">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-code"></i>
+                            <span>Full Stack</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>UI/UX</span>
+                        </div>
+                        <div class="experience-ring"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Портфолио</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/project1.jpg" alt="Интернет-магазин электроники">
+                        <div class="portfolio-overlay">
+                            <h3>TechStore</h3>
+                            <p>Современный интернет-магазин электроники с интеграцией платежных систем и автоматизированной системой управления заказами.</p>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/project2.jpg" alt="Лендинг для IT-компании">
+                        <div class="portfolio-overlay">
+                            <h3>IT Solutions Pro</h3>
+                            <p>Продающий лендинг для IT-компании с современным дизайном и высокой конверсией.</p>
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>SCSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/project3.jpg" alt="Корпоративный сайт">
+                        <div class="portfolio-overlay">
+                            <h3>BuildCorp</h3>
+                            <p>Корпоративный сайт строительной компании с интерактивной галереей проектов и онлайн-калькулятором стоимости.</p>
+                            <div class="tech-stack">
+                                <span>Vue.js</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/project4.jpg" alt="Онлайн-платформа">
+                        <div class="portfolio-overlay">
+                            <h3>EduLearn</h3>
+                            <p>Образовательная платформа с личным кабинетом, системой оплаты и видео-уроками.</p>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>Firebase</span>
+                                <span>Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/project5.jpg" alt="Сайт ресторана">
+                        <div class="portfolio-overlay">
+                            <h3>FoodMood</h3>
+                            <p>Сайт ресторана с онлайн-бронированием столиков и меню.</p>
+                            <div class="tech-stack">
+                                <span>WordPress</span>
+                                <span>PHP</span>
+                                <span>jQuery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/project6.jpg" alt="Фитнес-приложение">
+                        <div class="portfolio-overlay">
+                            <h3>FitLife</h3>
+                            <p>Веб-приложение для фитнес-клуба с расписанием тренировок и личным кабинетом.</p>
+                            <div class="tech-stack">
+                                <span>Angular</span>
+                                <span>Node.js</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Мои услуги</h2>
+                <p class="section-description">Создаю комплексные решения для вашего бизнеса</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span>🎨</span>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>UI/UX Дизайн</h3>
+                    <p>Создание современного и удобного интерфейса, который привлекает клиентов и повышает конверсию</p>
+                    <ul class="service-features">
+                        <li>Прототипирование</li>
+                        <li>Дизайн-системы</li>
+                        <li>Пользовательские сценарии</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span>💻</span>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Веб-разработка</h3>
+                    <p>Разработка сайтов любой сложности с использованием современных технологий и фреймворков</p>
+                    <ul class="service-features">
+                        <li>Frontend разработка</li>
+                        <li>Backend интеграция</li>
+                        <li>API разработка</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span>📱</span>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Адаптивный дизайн</h3>
+                    <p>Ваш сайт будет отлично выглядеть на всех устройствах: от смартфона до большого монитора</p>
+                    <ul class="service-features">
+                        <li>Mobile First подход</li>
+                        <li>Кроссбраузерность</li>
+                        <li>Оптимизация скорости</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span>🚀</span>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>SEO-оптимизация</h3>
+                    <p>Оптимизация сайта для поисковых систем, чтобы ваши клиенты легко находили вас</p>
+                    <ul class="service-features">
+                        <li>Техническая оптимизация</li>
+                        <li>Контент-стратегия</li>
+                        <li>Аналитика и отчеты</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section-background">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Тарифы</h2>
+                <p class="section-description">Выберите подходящий пакет услуг для вашего проекта</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">
+                            <span>🌱</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>Эконом</h3>
+                        <div class="price">от 30 000 ₽</div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            Одностраничный сайт
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            Адаптивный дизайн
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            Базовая SEO-оптимизация
+                        </div>
+                        <div class="feature-item disabled">
+                            <span class="feature-icon">×</span>
+                            Интеграция CMS
+                        </div>
+                    </div>
+                    <a href="#contact" class="pricing-btn">Выбрать</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Популярный</div>
+                    <div class="pricing-header">
+                        <div class="pricing-icon">
+                            <span>🌟</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>Стандарт</h3>
+                        <div class="price">от 60 000 ₽</div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            До 5 страниц
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            Уникальный дизайн
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            Анимации
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            Интеграция CMS
+                        </div>
+                    </div>
+                    <a href="#contact" class="pricing-btn">Выбрать</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">
+                            <span>👑</span>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>VIP</h3>
+                        <div class="price">от 120 000 ₽</div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            Неограниченное количество страниц
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            Премиум дизайн
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            Сложные анимации
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            Поддержка 24/7
+                        </div>
+                    </div>
+                    <a href="#contact" class="pricing-btn">Выбрать</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-background">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Связаться со мной</h2>
+                <p>Готов обсудить ваш проект</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-text">
+                        <p>Если у вас есть интересный проект или вы хотите обсудить возможности сотрудничества, я всегда открыт для общения.</p>
+                        <p>Выберите удобный для вас способ связи:</p>
+                    </div>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-header">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h3>Email</h3>
+                            </div>
+                            <p>daniil.webdev@gmail.com</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-header">
+                                <div class="contact-icon">
+                                    <i class="fab fa-telegram"></i>
+                                </div>
+                                <h3>Telegram</h3>
+                            </div>
+                            <p>@daniil_dev</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-header">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <h3>GitHub</h3>
+                            </div>
+                            <p>github.com/daniil-dev</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
