@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development & Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
     <header class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Привет, я <span class="highlight">Даниил</span></h1>
+                <h1>Здравствуйте, я <span class="highlight">Даниил</span></h1>
                 <div class="typing-text">
                     <span id="typed-text"></span>
                     <span class="cursor">|</span>
                 </div>
-                <p class="hero-description">Создаю современные веб-сайты, которые помогают бизнесу расти в цифровом пространстве</p>
+                <p class="hero-description">Создание современных веб-сайтов, которые приносят рост бизнесу в цифровом пространстве</p>
                 <div class="hero-cta">
                     <a href="#contact" class="btn btn-primary">Связаться со мной</a>
                     <a href="#portfolio" class="btn btn-secondary">Смотреть работы</a>
@@ -51,99 +51,84 @@
     </header>
 
     <section id="about" class="section">
-        <div class="container">
+        <div class="section-content">
             <div class="about-wrapper">
                 <div class="about-content">
                     <div class="about-header">
                         <h2>Обо мне</h2>
                         <div class="experience-badge">
-                            <span class="years">5+</span>
-                            <span class="text">лет опыта</span>
+                            <span class="years">5+</span><span class="text"> лет опыта</span>
                         </div>
                     </div>
                     <div class="about-text">
-                        <p class="highlight-text">Привет! Я веб-разработчик с страстью к созданию красивых и функциональных веб-сайтов.</p>
+                        <p class="highlight-text">Привет! Я веб-разработчик, создающий красивые и функциональные веб-сайты.</p>
                         <p>Специализируюсь на разработке современных веб-приложений с использованием передовых технологий и лучших практик в области дизайна и разработки.</p>
                     </div>
                     <div class="skills-container">
                         <div class="skill-category">
                             <h3>Frontend</h3>
-                            <div class="skill-items">
-                                <div class="skill-item" data-skill="HTML5">
-                                    <div class="skill-icon">
-                                        <i class="fab fa-html5"></i>
-                                    </div>
-                                    <div class="skill-info">
-                                        <span class="skill-name">HTML5</span>
-                                        <div class="skill-bar">
-                                            <div class="skill-progress" style="width: 95%"></div>
-                                        </div>
-                                    </div>
+                            <div class="skills-grid">
+                                <div class="skill-tag">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
                                 </div>
-                                <div class="skill-item" data-skill="CSS3">
-                                    <div class="skill-icon">
-                                        <i class="fab fa-css3-alt"></i>
-                                    </div>
-                                    <div class="skill-info">
-                                        <span class="skill-name">CSS3</span>
-                                        <div class="skill-bar">
-                                            <div class="skill-progress" style="width: 90%"></div>
-                                        </div>
-                                    </div>
+                                <div class="skill-tag">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
                                 </div>
-                                <div class="skill-item" data-skill="JavaScript">
-                                    <div class="skill-icon">
-                                        <i class="fab fa-js"></i>
-                                    </div>
-                                    <div class="skill-info">
-                                        <span class="skill-name">JavaScript</span>
-                                        <div class="skill-bar">
-                                            <div class="skill-progress" style="width: 85%"></div>
-                                        </div>
-                                    </div>
+                                <div class="skill-tag" data-skill="JavaScript">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
                                 </div>
                             </div>
                         </div>
                         <div class="skill-category">
                             <h3>Backend</h3>
-                            <div class="skill-items">
-                                <div class="skill-item" data-skill="Node.js">
-                                    <div class="skill-icon">
-                                        <i class="fab fa-node-js"></i>
-                                    </div>
-                                    <div class="skill-info">
-                                        <span class="skill-name">Node.js</span>
-                                        <div class="skill-bar">
-                                            <div class="skill-progress" style="width: 80%"></div>
-                                        </div>
-                                    </div>
+                            <div class="skills-grid">
+                                <div class="skill-tag">
+                                    <i class="fab fa-php"></i>
+                                    <span>PHP</span>
                                 </div>
-                                <div class="skill-item" data-skill="Python">
-                                    <div class="skill-icon">
-                                        <i class="fab fa-python"></i>
-                                    </div>
-                                    <div class="skill-info">
-                                        <span class="skill-name">Python</span>
-                                        <div class="skill-bar">
-                                            <div class="skill-progress" style="width: 75%"></div>
-                                        </div>
-                                    </div>
+                                <div class="skill-tag">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Node.js</span>
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fas fa-database"></i>
+                                    <span>MySQL</span>
+                                </div>
+                                <div class="skill-tag" data-skill="WordPress">
+                                    <i class="fab fa-wordpress"></i>
+                                    <span>WordPress</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="stats-container">
                         <div class="stat-item">
-                            <div class="stat-number" data-count="150">0</div>
-                            <div class="stat-label">Проектов завершено</div>
+                            <div class="stat-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="stat-number" data-count="167">0</div>
+                            <div class="stat-label">Проектов</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number" data-count="98">0</div>
-                            <div class="stat-label">Довольных клиентов</div>
-                        </div>
-                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
                             <div class="stat-number" data-count="5">0</div>
                             <div class="stat-label">Лет опыта</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-smile"></i>
+                            </div>
+                            <div class="stat-number" data-count="48">0</div>
+                            <div class="stat-label">Клиентов</div>
                         </div>
                     </div>
                 </div>
@@ -258,69 +243,156 @@
     </section>
 
     <section id="services" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Мои услуги</h2>
-                <p class="section-description">Создаю комплексные решения для вашего бизнеса</p>
-            </div>
+        <div class="section-content">
+            <h2>Мои услуги</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
-                        <span>🎨</span>
-                        <div class="icon-bg"></div>
+                        <i class="fas fa-code"></i>
                     </div>
-                    <h3>UI/UX Дизайн</h3>
-                    <p>Создание современного и удобного интерфейса, который привлекает клиентов и повышает конверсию</p>
-                    <ul class="service-features">
-                        <li>Прототипирование</li>
-                        <li>Дизайн-системы</li>
-                        <li>Пользовательские сценарии</li>
-                    </ul>
+                    <div class="service-content">
+                        <h3>Разработка сайтов</h3>
+                        <p>Создание современных и функциональных веб-сайтов с учетом ваших потребностей</p>
+                        <ul class="service-features">
+                            <li class="service-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Адаптивный дизайн</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check"></i>
+                                <span>SEO-оптимизация</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Высокая производительность</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="service-card">
                     <div class="service-icon">
-                        <span>💻</span>
-                        <div class="icon-bg"></div>
+                        <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3>Веб-разработка</h3>
-                    <p>Разработка сайтов любой сложности с использованием современных технологий и фреймворков</p>
-                    <ul class="service-features">
-                        <li>Frontend разработка</li>
-                        <li>Backend интеграция</li>
-                        <li>API разработка</li>
-                    </ul>
+                    <div class="service-content">
+                        <h3>Мобильная разработка</h3>
+                        <p>Разработка мобильных приложений для iOS и Android с современным дизайном</p>
+                        <ul class="service-features">
+                            <li class="service-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Нативные приложения</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Кроссплатформенность</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Интеграция с API</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="service-card">
                     <div class="service-icon">
-                        <span>📱</span>
-                        <div class="icon-bg"></div>
+                        <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <h3>Адаптивный дизайн</h3>
-                    <p>Ваш сайт будет отлично выглядеть на всех устройствах: от смартфона до большого монитора</p>
-                    <ul class="service-features">
-                        <li>Mobile First подход</li>
-                        <li>Кроссбраузерность</li>
-                        <li>Оптимизация скорости</li>
-                    </ul>
+                    <div class="service-content">
+                        <h3>Интернет-магазины</h3>
+                        <p>Разработка онлайн-магазинов с полным функционалом для вашего бизнеса</p>
+                        <ul class="service-features">
+                            <li class="service-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Каталог товаров</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Система оплаты</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Админ-панель</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="service-card">
                     <div class="service-icon">
-                        <span>🚀</span>
-                        <div class="icon-bg"></div>
+                        <i class="fas fa-paint-brush"></i>
                     </div>
-                    <h3>SEO-оптимизация</h3>
-                    <p>Оптимизация сайта для поисковых систем, чтобы ваши клиенты легко находили вас</p>
-                    <ul class="service-features">
-                        <li>Техническая оптимизация</li>
-                        <li>Контент-стратегия</li>
-                        <li>Аналитика и отчеты</li>
-                    </ul>
+                    <div class="service-content">
+                        <h3>UI/UX Дизайн</h3>
+                        <p>Создание привлекательных и удобных пользовательских интерфейсов</p>
+                        <ul class="service-features">
+                            <li class="service-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Прототипирование</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Анимации</span>
+                            </li>
+                            <li class="service-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Уникальный стиль</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section-background">
-            <div class="circle circle-1"></div>
-            <div class="circle circle-2"></div>
+    </section>
+
+    <section class="benefits-section">
+        <div class="benefits-header">
+            <h2>Что вы получите</h2>
+            <p class="section-description">Преимущества работы со мной</p>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Быстрая разработка</h3>
+                <p>Оптимальные сроки без потери качества</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Надежность</h3>
+                <p>Безопасный и стабильный код</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>Поддержка</h3>
+                <p>Постоянные обновления и улучшения</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Инновации</h3>
+                <p>Современные технологии и подходы</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>Коммуникация</h3>
+                <p>Постоянная связь и отчетность</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Результативность</h3>
+                <p>Достижение бизнес-целей</p>
+            </div>
         </div>
     </section>
 
@@ -330,94 +402,49 @@
                 <h2>Тарифы</h2>
                 <p class="section-description">Выберите подходящий пакет услуг для вашего проекта</p>
             </div>
-            <div class="pricing-grid">
+            <div class="pricing-cards">
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <div class="pricing-icon">
-                            <span>🌱</span>
-                            <div class="icon-bg"></div>
-                        </div>
-                        <h3>Эконом</h3>
+                        <h3>Базовый</h3>
                         <div class="price">от 30 000 ₽</div>
                     </div>
-                    <div class="pricing-features">
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            Одностраничный сайт
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            Адаптивный дизайн
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            Базовая SEO-оптимизация
-                        </div>
-                        <div class="feature-item disabled">
-                            <span class="feature-icon">×</span>
-                            Интеграция CMS
-                        </div>
-                    </div>
-                    <a href="#contact" class="pricing-btn">Выбрать</a>
+                    <ul class="pricing-features">
+                        <li>Одностраничный сайт</li>
+                        <li>Адаптивный дизайн</li>
+                        <li>До 5 блоков</li>
+                        <li>Базовое SEO</li>
+                    </ul>
+                    <a href="form.html?tariff=Базовый тариф (от 30 000 ₽)" class="pricing-btn">Выбрать</a>
                 </div>
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Популярный</div>
+
+                <div class="pricing-card featured">
                     <div class="pricing-header">
-                        <div class="pricing-icon">
-                            <span>🌟</span>
-                            <div class="icon-bg"></div>
-                        </div>
                         <h3>Стандарт</h3>
                         <div class="price">от 60 000 ₽</div>
                     </div>
-                    <div class="pricing-features">
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            До 5 страниц
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            Уникальный дизайн
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            Анимации
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            Интеграция CMS
-                        </div>
-                    </div>
-                    <a href="#contact" class="pricing-btn">Выбрать</a>
+                    <ul class="pricing-features">
+                        <li>До 5 страниц</li>
+                        <li>Уникальный дизайн</li>
+                        <li>Анимации</li>
+                        <li>Расширенное SEO</li>
+                        <li>Поддержка 30 дней</li>
+                    </ul>
+                    <a href="form.html?tariff=Стандарт тариф (от 60 000 ₽)" class="pricing-btn">Выбрать</a>
                 </div>
+
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <div class="pricing-icon">
-                            <span>👑</span>
-                            <div class="icon-bg"></div>
-                        </div>
-                        <h3>VIP</h3>
-                        <div class="price">от 120 000 ₽</div>
+                        <h3>Премиум</h3>
+                        <div class="price">от 100 000 ₽</div>
                     </div>
-                    <div class="pricing-features">
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            Неограниченное количество страниц
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            Премиум дизайн
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            Сложные анимации
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            Поддержка 24/7
-                        </div>
-                    </div>
-                    <a href="#contact" class="pricing-btn">Выбрать</a>
+                    <ul class="pricing-features">
+                        <li>Интернет-магазин</li>
+                        <li>Личный кабинет</li>
+                        <li>Система управления</li>
+                        <li>Полное SEO</li>
+                        <li>Поддержка 60 дней</li>
+                    </ul>
+                    <a href="form.html?tariff=Премиум тариф (от 100 000 ₽)" class="pricing-btn">Выбрать</a>
                 </div>
             </div>
         </div>
@@ -436,54 +463,48 @@
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <div class="contact-text">
-                        <p>Если у вас есть интересный проект или вы хотите обсудить возможности сотрудничества, я всегда открыт для общения.</p>
                         <p>Выберите удобный для вас способ связи:</p>
+                        <br>
                     </div>
                     <div class="contact-cards">
-                        <div class="contact-card">
-                            <div class="contact-card-header">
+                        <a href="https://forms.gle/ub7wHcYbktdPHoUDA" target="_blank" class="contact-card-link">
+                            <div class="contact-card contact-card-button">
+                                <div class="contact-icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </div>
+                                <h3>Отправить заявку</h3>
+                                <p>Заполнить форму</p>
+                            </div>
+                        </a>
+                        <a href="mailto:danrody@mail.ru" class="contact-card-link">
+                            <div class="contact-card">
                                 <div class="contact-icon">
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <h3>Email</h3>
+                                <p>danrody@mail.ru</p>
                             </div>
-                            <p>daniil.webdev@gmail.com</p>
-                        </div>
-                        <div class="contact-card">
-                            <div class="contact-card-header">
+                        </a>
+                        <a href="https://t.me/daniil_developer" target="_blank" class="contact-card-link">
+                            <div class="contact-card">
                                 <div class="contact-icon">
                                     <i class="fab fa-telegram"></i>
                                 </div>
                                 <h3>Telegram</h3>
+                                <p>@daniil_developer</p>
                             </div>
-                            <p>@daniil_dev</p>
-                        </div>
-                        <div class="contact-card">
-                            <div class="contact-card-header">
+                        </a>
+                        <a href="https://github.com/your-github-username" target="_blank" class="contact-card-link">
+                            <div class="contact-card">
                                 <div class="contact-icon">
                                     <i class="fab fa-github"></i>
                                 </div>
                                 <h3>GitHub</h3>
+                                <p>github.com/your-username</p>
                             </div>
-                            <p>github.com/daniil-dev</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Ваше имя</label>
-                        <input type="text" id="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Сообщение</label>
-                        <textarea id="message" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Отправить сообщение</button>
-                </form>
             </div>
         </div>
     </section>

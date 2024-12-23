@@ -50,27 +50,38 @@ function typeText() {
 }
 
 // Анимация чисел в статистике
-function animateNumbers() {
-    const stats = document.querySelectorAll('.stat-number');
-    
-    stats.forEach(stat => {
-        const target = parseInt(stat.getAttribute('data-count'));
-        const duration = 2000; // 2 секунды
-        const step = target / (duration / 16); // 60 FPS
-        let current = 0;
-        
-        const updateNumber = () => {
-            current += step;
-            if (current < target) {
-                stat.textContent = Math.round(current);
-                requestAnimationFrame(updateNumber);
-            } else {
-                stat.textContent = target;
+function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.textContent = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+}
+
+function initStatsAnimation() {
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.querySelectorAll('.stat-number').forEach(stat => {
+                    if (!stat.classList.contains('animated')) {
+                        const finalValue = parseInt(stat.getAttribute('data-count'));
+                        animateValue(stat, 0, finalValue, 2000);
+                        stat.classList.add('animated');
+                    }
+                });
             }
-        };
-        
-        updateNumber();
-    });
+        });
+    }, { threshold: 0.5 });
+
+    const statsContainer = document.querySelector('.stats-container');
+    if (statsContainer) {
+        statsObserver.observe(statsContainer);
+    }
 }
 
 // Анимация прогресс-баров при скролле
@@ -89,23 +100,51 @@ function animateSkillBars() {
     });
 }
 
-// Запуск анимаций при загрузке страницы
+// Service Cards Highlight on Mobile
+function initServiceCardsHighlight() {
+    // Only initialize on mobile devices
+    if (window.innerWidth > 480) return;
+
+    const options = {
+        root: null,
+        rootMargin: '-20% 0px',
+        threshold: 0.7
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+            } else {
+                entry.target.classList.remove('in-view');
+            }
+        });
+    }, options);
+
+    // Observe all service cards
+    document.querySelectorAll('.service-card').forEach(card => {
+        observer.observe(card);
+    });
+}
+
+// Initialize on load
 document.addEventListener('DOMContentLoaded', () => {
     typeText();
     animateSkillBars();
-    
-    // Анимация чисел при появлении секции
-    const statsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateNumbers();
-                statsObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
+    initServiceCardsHighlight();
+    initStatsAnimation(); // Используем единую функцию для инициализации статистики
+});
 
-    const statsContainer = document.querySelector('.stats-container');
-    if (statsContainer) {
-        statsObserver.observe(statsContainer);
-    }
+// Reinitialize on resize (in case of orientation change)
+let resizeTimer;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        // Remove all existing in-view classes
+        document.querySelectorAll('.service-card.in-view').forEach(card => {
+            card.classList.remove('in-view');
+        });
+        // Reinitialize the animations
+        initServiceCardsHighlight();
+    }, 250);
 });
